@@ -1,1 +1,1 @@
-web: gunicorn main:isslocator
+web: gunicorn main:main
