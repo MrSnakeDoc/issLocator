@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+      integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+      crossorigin=""
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>ISS Locator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img src="./img/iss.png" alt="Logo" class="logo" />
+        <h1>ISS Locator</h1>
+      </div>
+      <div class="content">
+        <div class="component">
+          <div class="side-bar">
+            <h2 class="title">Informations</h2>
+            <div class="infos">
+              <p class="latitude">Latitude : <span class="lat"></span></p>
+              <p class="longitude">Longitude : <span class="lng"></span></p>
+              <p class="altitude">Altitude : <span class="alt"></span></p>
+              <p class="speed">Speed : <span class="speed"></span></p>
+              <p class="time">Time : <span class="time"></span></p>
+              <p class="date">Date : <span class="date"></span></p>
+            </div>
+          </div>
+          <div id="map"></div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+      integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+      crossorigin=""
+    ></script>
+    <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+    <script>
+      dayjs().format();
+    </script>
+    <script src="../js/index.js"></script>
+  </body>
+</html>
