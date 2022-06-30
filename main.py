@@ -24,15 +24,15 @@ class Favicon(Resource):
 
 api.add_resource(Home, '/')
 
-api.add_resource(Favicon, '/favicon.ico')
+# api.add_resource(Favicon, '/favicon.ico')
 
-api.add_resource(ISSLocation, '/iss/now')
+# api.add_resource(ISSLocation, '/iss/now')
 
-api.add_resource(Styles, '/styles/styles.css')
+# api.add_resource(Styles, '/styles/styles.css')
 
-api.add_resource(JsLogic, '/js/<string:name>')
+# api.add_resource(JsLogic, '/js/<string:name>')
 
-api.add_resource(Img, '/img/<string:name>')
+# api.add_resource(Img, '/img/<string:name>')
 
 if __name__ == "__main__":
     # start up api
