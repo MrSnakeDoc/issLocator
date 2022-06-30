@@ -11,6 +11,7 @@ from app.controllers.img import Img
 import os
 
 mode=os.environ.get('MODE')
+print(mode)
 
 app = Flask(__name__)
 
