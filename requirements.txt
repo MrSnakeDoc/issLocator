@@ -2,4 +2,4 @@ flask
 flask_restful
 flask_cors
 requests
-dotenv
+python-dotenv
