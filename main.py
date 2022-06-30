@@ -16,7 +16,7 @@ app = Flask(__name__)
 
 api = Api(app)
 
-CORS(app)
+CORS(app, resources={r"/api/*": {"origins": "https://isslocatorpy.herokuapp.com/*"}})
 
 class Favicon(Resource):
     def get(self):

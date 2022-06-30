@@ -1,7 +1,7 @@
 const app = {
   getCoordinates: async () => {
     try {
-      const result = await fetch("http://localhost/iss/now");
+      const result = await fetch("https://isslocatorpy.herokuapp.com/iss/now");
 
       const { lat, lng } = await result.json();
 
