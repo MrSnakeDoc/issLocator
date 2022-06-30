@@ -1,7 +1,7 @@
 const app = {
   getCoordinates: async () => {
     try {
-      const result = await fetch("http://localhost:5000/iss/now");
+      const result = await fetch("http://109.190.8.67/iss/now");
 
       const { lat, lng } = await result.json();
 

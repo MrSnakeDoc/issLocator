@@ -11,10 +11,8 @@ from app.controllers.img import Img
 import os
 
 mode=os.environ.get('MODE')
-print(mode)
 
 app = Flask(__name__)
-
 
 api = Api(app)
 
@@ -27,8 +25,6 @@ class Favicon(Resource):
 api.add_resource(Home, '/')
 
 api.add_resource(Favicon, '/favicon.ico')
-
-
 
 api.add_resource(ISSLocation, '/iss/now')
 
